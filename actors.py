@@ -99,7 +99,7 @@ def index():
     #message2 = upload_file()
     app.config['SECRET_KEY'] = 'some?bamboozle#string-foobar'
     image=upload_file()
-    model = load_model("../file/content/savem")
+    model = load_model("./file/content/savem")
     imgbgr = cv2.imread(image)
     imgRgb = cv2.cvtColor(imgbgr, cv2.COLOR_BGR2RGB)
     training = []
