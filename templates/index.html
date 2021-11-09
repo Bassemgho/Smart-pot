@@ -17,7 +17,7 @@ Smart Pot
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
-
+      
       <h1 style="font-family: 'Caveat', cursive; font-size: 30px; font-weight: bold;">Smart Pot</h1>
 
       <p class="lead">This application helps you to detect the name of your plant and gives you an idea about its planning during a week</p>
@@ -25,8 +25,14 @@ Smart Pot
       <img src="static/plant.jpg" alt="Italian Trulli" style="width:600px;height:250px;">
       </center>
       
-      {{ wtf.quick_form(form) }}
+      <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file1">
+        <input type="submit">
+      </form>
 
+      {{ wtf.quick_form(form) }}
+      <img src="{{image}}" alt="">
+      <p class="space-above"><strong>{{ nm }}</strong></p>
       <p class="space-above"><strong>{{ message }}</strong></p>
           <table  BORDER="2"    WIDTH="50%"   CELLPADDING="4" CELLSPACING="3">
   <tr>
